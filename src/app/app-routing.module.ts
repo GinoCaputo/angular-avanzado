@@ -7,6 +7,7 @@ import { RegisterComponent } from './auth/register/register.component';
 import { ProgressComponent } from './pages/progress/progress.component';
 import { Grafica1Component } from './pages/grafica1/grafica1.component';
 import { PagesComponent } from './pages/pages.component';
+import { NopagefoundComponent } from './pages/nopagefound/nopagefound.component';
 
 const routes: Routes = [
   // Rutas primarias
@@ -23,8 +24,9 @@ const routes: Routes = [
   // Rutas primarias
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
+  { path: 'nopagefound', component: NopagefoundComponent},
 
-  { path: '**', redirectTo: '/dashboard', pathMatch: 'full'}
+  { path: '**', redirectTo: '/nopagefound', pathMatch: 'full'}
 ];
 
 @NgModule({
