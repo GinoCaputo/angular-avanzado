@@ -8,6 +8,9 @@ import { NopagefoundComponent } from './pages/nopagefound/nopagefound.component'
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { BreadcumbsComponent } from './shared/breadcumbs/breadcumbs.component';
+import { ProgressComponent } from './pages/progress/progress.component';
+import { Grafica1Component } from './pages/grafica1/grafica1.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,14 @@ import { BreadcumbsComponent } from './shared/breadcumbs/breadcumbs.component';
     NopagefoundComponent,
     SidebarComponent,
     HeaderComponent,
-    BreadcumbsComponent
+    BreadcumbsComponent,
+    ProgressComponent,
+    Grafica1Component
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
