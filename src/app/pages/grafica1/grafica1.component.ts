@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class Grafica1Component implements OnInit {
-
+  public labels1: string[] = ['asd', 'dsa', 'Mail-Order Sales'];
+  public data1 = [
+    [350, 450, 100]
+  ];
+  public type: string = 'doughnut';
+  public colors: object[] = [
+    {backgroundColor: ['red', 'green', 'blue']}
+  ];
   constructor() { }
 
   ngOnInit(): void {

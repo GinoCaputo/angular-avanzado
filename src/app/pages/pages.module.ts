@@ -8,6 +8,8 @@ import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
+import { FormsModule } from '@angular/forms';
+import { ComponentsModule } from '../components/components.module';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,    
     RouterModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    ComponentsModule
   ],
   exports: [
     ProgressComponent,
