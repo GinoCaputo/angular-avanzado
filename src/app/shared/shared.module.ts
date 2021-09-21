@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 // MODULOS
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -16,6 +17,7 @@ import { BreadcumbsComponent } from './breadcumbs/breadcumbs.component';
   ],
   imports: [
     CommonModule,
+    RouterModule
     
   ],
   exports: [
