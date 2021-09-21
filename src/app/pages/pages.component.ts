@@ -7,6 +7,7 @@ declare function customInitFunction():any;
   styles: [
   ]
 })
+
 export class PagesComponent implements OnInit {
 
   constructor(private settingService: SettingsService) { }
